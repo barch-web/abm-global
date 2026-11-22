@@ -1,0 +1,6 @@
+{
+  "name": "ABM Global Ltd",
+  "description": "Trusted IT training, networking, hardware & software support, IT auditing, CCTV surveillance, and technology procurement in Accra, Ghana.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

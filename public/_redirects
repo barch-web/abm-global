@@ -1,0 +1,4 @@
+# Next.js App Router handles all routes (/services, /gallery, /book-consultation, /admin, etc.) natively via SSR/CSR without 404 errors.
+# API and Netlify Functions routes are explicitly preserved:
+/api/*  /api/:splat  200
+/.netlify/functions/*  /.netlify/functions/:splat  200

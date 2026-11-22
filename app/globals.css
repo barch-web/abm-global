@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-sans: var(--font-poppins), "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, monospace;
+  --color-navy-950: #061326;
+  --color-navy-900: #0b1f3a;
+  --color-navy-800: #132c4e;
+  --color-gold-500: #f2b705;
+  --color-gold-400: #f7c733;
+  --color-surface-50: #f4f6f8;
+  --color-emerald-600: #1e9e5a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color: #0b1f3a;
+    background-color: #ffffff;
+  }
+
+  body {
+    font-family: var(--font-poppins), "Poppins", ui-sans-serif, system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    color: #0b1f3a;
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    outline: 2px solid #f2b705;
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
